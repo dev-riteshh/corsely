@@ -6,6 +6,8 @@
 
 body{
   font-family: 'poppins';
+  background-color: #f7f7f7;
+  height: 80vh;
 }
 button{
   font-family: 'poppins';
