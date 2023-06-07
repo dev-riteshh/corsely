@@ -9,6 +9,34 @@ body{
   background-color: #f7f7f7;
   height: 80vh;
 }
+
 button{
   font-family: 'poppins';
+}
+
+/* Admin.css */
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Add a custom background color to the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #4b51ff;
+  border-radius: 4px;
+}
+
+/* On hover, add a darker background color to the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #161ef8;
+}
+
+.active{
+  color: white;
+  @apply bg-blue-600
 }

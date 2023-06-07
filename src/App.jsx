@@ -9,6 +9,9 @@ import Dashboard from './pages/Dashboard'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import AcessedCourse from './pages/AcessedCourse'
+import CoursePage from './pages/CoursePage'
+import CoursepageEdit from './pages/CoursepageEdit'
+import NewCourse from './pages/NewCourse'
 
 function App() {
 
@@ -19,14 +22,18 @@ function App() {
         <Route path='/' element={<Homepage />}/>
         <Route path='/signup' element={<Signup />}/>
         <Route path='/login' element={<Login />}/>
+
         <Route path='/admin' element={<Admin/>}>
           <Route path='dashboard' element={<Dashboard/>}/>
           <Route path='profile' element={<Profile />} />
-          <Route path='courses' element={<Courses />} />
+          <Route path='courses' element={<Courses />}/>
+          <Route path='courses/new' element={<NewCourse />}/>
+          <Route path='courses/:id' element={<CoursePage/>}/>
+          <Route path='courses/:id/edit' element={<CoursepageEdit/>}/>
           <Route path='payment' element={<Payment />} />
         </Route>
         
-        <Route path='/course-content/:id' element={<AcessedCourse/>}/>
+        <Route path='/course-creator-name/course-content/:id' element={<AcessedCourse/>}/>
       </Routes>
     </>
   )
