@@ -14,7 +14,7 @@ const Admin = () => {
             <div className='p-4 justify-between items-center flex'>
               <h1 className='text-lg font-medium'>Dashboard/profile</h1>
               <div className='flex items-center gap-2'>
-                <p className='text-lg font-medium'>John doe</p>
+                <p className='text-lg font-medium'>Simon Jog</p>
                 <img src="" alt="" className='h-10 w-10 rounded-full bg-blue-600' />
               </div>
             </div>
